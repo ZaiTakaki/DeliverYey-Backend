@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dbdeliveryey
+    username: root
+    password: zairen
+    hikari:
+      connectionTimeout: 20000 # Example of setting Hikari connection pool properties
+      maximumPoolSize: 5
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8081
